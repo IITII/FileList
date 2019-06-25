@@ -21,7 +21,7 @@ if(file_exists($md_file)){
 ?>
 <html>
     <head>
-        <title>FileList<?php echo $md_path_all; ?></title>
+        <title>FileList <?php echo $md_path_all; ?></title>
         <link rel="shortcut icon" href="resources/themes/bootstrap/img/folder.png" /> <!-- 网站LOGO -->
         <link rel="stylesheet" href="resources/themes/bootstrap/css/bootstrap.min.css" /> <!-- CSS基本库 -->
         <link rel="stylesheet" href="resources/themes/bootstrap/css/font-awesome.min.css" /> <!-- 网站图标CSS式样 -->
