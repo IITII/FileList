@@ -1,6 +1,7 @@
 ## FileList
-> [https://github.com/ToyoDAdoubi/DirectoryLister](https://github.com/ToyoDAdoubi/DirectoryLister) 的自定义版本，毕竟原来的不符合个人的要求  
-> 现在改好以后开箱即用  
+* 务必运行在网站根目录，否则 *README.html* 无法正常显示。  
+* [程序放在网站子目录不显示 README.html 的解决方法](#%E7%A8%8B%E5%BA%8F%E6%94%BE%E5%9C%A8%E7%BD%91%E7%AB%99%E5%AD%90%E7%9B%AE%E5%BD%95%E4%B8%8D%E6%98%BE%E7%A4%BAREADMEhtml%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95)
+
 ### 文件结构
 假设你的虚拟主机是 `/home/wwwroot/xxx.xx`
 ``` bash
@@ -54,7 +55,7 @@ sed -i 's/,scandir//g' /usr/local/php/etc/php.ini
 /etc/init.d/php-fpm restart
 # 重启 PHP生效
 ```
-#### 程序放在网站子目录不显示 README.html 的解决方法
+#### 程序放在网站子目录不显示README.html的解决方法
 
 因为程序有个判断 `README.html` 路径的代码，而如果是正常使用域名或IP(即使加上)，都是可以自适应的。
 
